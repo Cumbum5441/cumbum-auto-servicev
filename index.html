@@ -1,0 +1,159 @@
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f4f4;
+color:#333;
+}
+
+header{
+background:linear-gradient(90deg,#FFD600,#FF9800);
+padding:25px;
+text-align:center;
+color:#000;
+box-shadow:0 3px 10px rgba(0,0,0,.2);
+}
+
+header h1{
+font-size:32px;
+}
+
+header p{
+margin-top:8px;
+font-size:18px;
+font-weight:bold;
+}
+
+.container{
+width:95%;
+max-width:600px;
+margin:auto;
+padding:15px;
+}
+
+.btn{
+display:block;
+width:100%;
+padding:15px;
+margin:12px 0;
+text-align:center;
+text-decoration:none;
+border-radius:10px;
+font-size:18px;
+font-weight:bold;
+color:white;
+}
+
+.whatsapp{
+background:#25D366;
+}
+
+.call{
+background:#0d6efd;
+}
+
+.location{
+background:#ff5722;
+}
+
+.book{
+background:#ff9800;
+}
+
+input{
+width:100%;
+padding:14px;
+margin:8px 0;
+border-radius:8px;
+border:1px solid #ccc;
+font-size:16px;
+}
+
+button{
+width:100%;
+padding:15px;
+background:#ff9800;
+color:white;
+border:none;
+border-radius:8px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+background:white;
+}
+
+th{
+background:#FFD600;
+padding:12px;
+}
+
+td{
+padding:12px;
+border:1px solid #ddd;
+text-align:center;
+}
+
+#result{
+margin-top:15px;
+font-size:20px;
+font-weight:bold;
+color:#d32f2f;
+}
+</style><div class="container">
+
+<h2>🚖 Welcome to Cumbum Auto Service</h2>
+<h2>🚖 Book Your Auto</h2>
+
+<form onsubmit="sendBooking(); return false;">
+
+<input type="text" id="name" placeholder="👤 Your Name" required>
+
+<input type="tel" id="phone" placeholder="📞 Mobile Number" required>
+
+<input type="text" id="pickup" placeholder="📍 Pickup Location" required>
+
+<input type="text" id="drop" placeholder="🏁 Drop Location" required>
+
+<button type="submit">
+🚖 Book Now
+</button>
+
+</form><h2>💰 Fare Calculator</h2>
+
+<input type="number" id="km" placeholder="దూరం (KM) నమోదు చేయండి">
+
+<button onclick="calculateFare()">💰 Calculate Fare</button>
+
+<h3 id="result"></h3>
+
+<hr style="margin:20px 0;">
+
+<hr style="margin:20px 0;">
+<p style="margin:15px 0;font-size:18px;">
+24×7 ఆటో సర్వీస్ – కంభం, అర్ధవీడు, మార్కాపురం, బెస్తవారిపేట
+</p>
+
+<a class="btn whatsapp" href="https://wa.me/917989202444">
+💬 WhatsApp Booking
+</a>
+
+<a class="btn call" href="tel:+917989202444">
+📞 Call Now
+</a>
+
+<a class="btn location" href="https://maps.app.goo.gl/3hwot1Hh5zUdTYtk9?g_st=ac" target="_blank">
+📍 View Location
+</a>
+
+<hr style="margin:20px 0;">
